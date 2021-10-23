@@ -1,0 +1,4 @@
+Student name: Jelle de Vries
+Student number: 675779
+Student class: INF2B
+URL student GitHub repository: https://github.com/H4B1TZ/webmarkup2021
