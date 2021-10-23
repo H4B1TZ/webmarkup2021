@@ -1,3 +1,12 @@
+/* Global */
+@font-face {
+    font-family: Notable;
+    src: url(../Notable-Regular.ttf);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* Home page */
 #home__body {
