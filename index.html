@@ -2,22 +2,58 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
 
-<body id="home__body">
+<body id="home_body">
 <header>
   <!--Logo placeholder-->
   <h1>besttrips.nl</h1>
   <h2>Find the best trips for the best price!</h2>
 </header>
 
-<nav>
+<nav id="hamburger_menu">
+  <a id="hamburger_open" href="#hamburger_items">&equiv;</a>
+
+  <ul id="hamburger_items">
+    <li><a id="hamburger_close" href="#">&#10005;</a></li>
+    <li><a href="bestdestinations.html">Destinations</a></li>
+    <li><a href="tickets.html">Tickets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<nav id="nav_bar">
   <ul>
     <li><a href="bestdestinations.html">Destinations</a></li>
     <li><a href="tickets.html">Tickets</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
+
+<ol class="upcoming_destinations">
+  <li>
+    <h1>Tokyo</h1>
+    <p>Experience the streets of Tokyo</p>
+  </li>
+  <li>
+    <h1>Rome</h1>
+    <p>View the Colosseum</p>
+  </li>
+  <li>
+    <h1>Singapore</h1>
+    <p>Enjoy the food of Singapore</p>
+  </li>
+  <li>
+    <h1>Canberra</h1>
+    <p>Visit the capital city of Australia</p>
+  </li>
+  <li>
+    <h1>Frankfurt</h1>
+    <p>Discover Germany</p>
+  </li>
+</ol>
 
 <video width="50%" autoplay muted>
   <source src="catalonia.mp4" type="video/mp4">
@@ -72,17 +108,36 @@
 
   <aside>
     <h2>Upcoming</h2>
-    <ol>
-      <li>Tokyo</li>
-      <li>Rome</li>
-      <li>Singapore</li>
-      <li>Canberra</li>
-      <li>Frankfurt</li>
+    <ol class="upcoming_destinations">
+      <li>
+        <h1>Tokyo</h1>
+        <p>Experience the streets of Tokyo</p>
+      </li>
+      <li>
+        <h1>Rome</h1>
+        <p>View the Colosseum</p>
+      </li>
+      <li>
+        <h1>Singapore</h1>
+        <p>Enjoy the food of Singapore</p>
+      </li>
+      <li>
+        <h1>Canberra</h1>
+        <p>Visit the capital city of Australia</p>
+      </li>
+      <li>
+        <h1>Frankfurt</h1>
+        <p>Discover Germany</p>
+      </li>
     </ol>
   </aside>
 </section>
 
-
-
+<footer>
+  <small id="author_copyright">&copy; 2021 Jelle de Vries</small>
+  <section id="cookie_statement">
+    <p>Cookie statement</p>
+  </section>
+</footer>
 </body>
 </html>
