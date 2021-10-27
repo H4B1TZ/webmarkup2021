@@ -5,6 +5,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -110,6 +114,7 @@ body > footer {
 }
 
 #cookie_statement {
+    z-index: 9999;
     flex-grow: 1;
 
     position: fixed;
@@ -121,17 +126,12 @@ body > footer {
     background-color: #FA0;
     opacity: 50%;
     color: #FFF;
+    border-radius: 30px;
 
     text-align: center;
 }
 
 /* Home page */
-#home_body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #home_middle_section {
     display: flex;
     justify-content: space-evenly;
@@ -198,4 +198,41 @@ body > footer {
     #home_middle_section img {
         width: 100%;
     }
+}
+
+/* Best destinations */
+.article-1 { grid-area: article-1; }
+.article-2 { grid-area: article-2; }
+.article-3 { grid-area: article-3; }
+.article-4 { grid-area: article-4; }
+.article-5 { grid-area: article-5; }
+.article-6 { grid-area: article-6; }
+
+.product-1 { grid-area: product-1; }
+.product-2 { grid-area: product-2; }
+.product-3 { grid-area: product-3; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'article-2 article-1 article-3'
+        'article-2 article-1 article-3'
+        'article-5 article-1 article-3'
+        'article-5 article-1 article-4'
+        'article-5 article-1 article-4'
+        'article-5 article-1 article-4'
+        'article-5 article-6 article-6';
+    align-items: center;
+}
+
+#aside_destinations {
+    display: grid;
+    grid-template-areas: 'product-1 product-2 product-3';
+
+    width: 100%;
+}
+
+
+#aside_destinations img {
+    width: 75%;
 }
