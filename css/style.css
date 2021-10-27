@@ -228,11 +228,72 @@ body > footer {
 #aside_destinations {
     display: grid;
     grid-template-areas: 'product-1 product-2 product-3';
-
-    width: 100%;
 }
 
 
 #aside_destinations img {
     width: 75%;
 }
+
+@media only screen and (min-width: 480px) and (max-width: 1281px){
+    .grid-container {
+        grid-template-areas:
+            'article-1 article-2'
+            'article-1 article-2'
+            'article-3 article-2'
+            'article-3 article-5'
+            'article-3 article-5'
+            'article-3 article-5'
+            'article-6 article-6'
+            'article-6 article-6';
+    }
+
+    .article-4 { display: none; }
+
+    #aside_destinations {
+        grid-template-areas: 'product-1 product-2';
+    }
+
+    .product-3 { display: none; }
+}
+
+@media only screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-areas:
+            'article-5 article-5'
+            'article-3 article-3'
+            'article-2 article-2'
+            'article-1 article-1';
+    }
+
+    .article-4 { display: none; }
+    .article-6 { display: none; }
+
+    #aside_destinations {
+        grid-template-areas:
+            'product-1'
+            'product-2'
+            'product-3';
+    }
+}
+
+/* Tickets */
+#tickets_middle {
+    display: flex;
+}
+
+#tickets_middle table {
+    flex-grow: 2;
+}
+
+#tickets_middle aside {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#tickets_middle img {
+    width: 50%;
+}
+
