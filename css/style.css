@@ -286,6 +286,18 @@ body > footer {
     flex-grow: 2;
 }
 
+#tickets_middle table tbody tr:nth-child(even) {
+    background-color: #CFF;
+}
+
+#tickets_middle table tbody tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+#tickets_middle table tbody tr td:first-child {
+    background-color: #FF0;
+}
+
 #tickets_middle aside {
     width: 30%;
 
@@ -297,3 +309,32 @@ body > footer {
     width: 50%;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1280px) {
+    #tickets_middle {
+        flex-direction: column;
+    }
+
+    #tickets_middle aside {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #tickets_middle aside figure:first-child {
+        display: none;
+    }
+
+    #tickets_middle img {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #tickets_middle aside {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #tickets_middle aside figure:first-child {
+        display: initial;
+    }
+}
