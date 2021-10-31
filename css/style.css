@@ -4,6 +4,16 @@
     src: url(../Notable-Regular.ttf);
 }
 
+#page_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page_header img {
+    width: 50%;
+}
+
 body {
     display: flex;
     flex-direction: column;
