@@ -338,3 +338,45 @@ body > footer {
         display: initial;
     }
 }
+
+/* Contact */
+#contact_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact_middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact_middle form {
+    flex-shrink: 1;
+}
+
+#contact_middle aside {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_middle img {
+    width: 80%;
+}
+
+@media only screen and (max-width: 480px) {
+    #contact_middle {
+        flex-direction: column;
+    }
+
+    #contact_middle aside {
+        width: 100%;
+    }
+
+    #contact_middle img {
+        width: 80%;
+    }
+}
