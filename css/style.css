@@ -169,6 +169,7 @@ body > footer {
 #home_middle_section {
     display: flex;
     justify-content: space-evenly;
+
 }
 
 #home_middle_section > h2 {
@@ -177,6 +178,8 @@ body > footer {
 
 #home_middle_section > section {
     width: 75%;
+
+    margin-top: 50px;
 }
 
 #home_middle_section p {
@@ -232,7 +235,7 @@ body > footer {
 }
 
 @media only screen and (max-width: 480px) {
-    #home_body video {
+    #home_video {
         display: none;
     }
 }
