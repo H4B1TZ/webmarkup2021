@@ -433,6 +433,14 @@ body > footer {
     flex-shrink: 1;
 }
 
+#contact_middle label[for="message"] {
+    vertical-align: top;
+}
+
+#contact_middle textarea {
+    width: 100%;
+}
+
 #contact_middle aside {
     width: 30%;
 
