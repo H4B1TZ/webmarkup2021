@@ -162,11 +162,17 @@ body > footer {
 /* Home page */
 #home_video {
     position: relative;
+
+    width: 50%;
 }
 
 #home_middle_section {
     display: flex;
     justify-content: space-evenly;
+}
+
+#home_middle_section > h2 {
+    position: absolute;
 }
 
 #home_middle_section > section {
@@ -212,7 +218,7 @@ body > footer {
     list-style-type: disc;
 }
 
-.upcoming_destinations h1 {
+.upcoming_destinations h2 {
     font-family: Notable;
     font-size: larger;
 
@@ -333,8 +339,14 @@ body > footer {
     display: flex;
 }
 
+#tickets_middle > h2 {
+    position: absolute;
+}
+
 #tickets_middle table {
     flex-grow: 2;
+
+    margin-top: 50px;
 }
 
 #tickets_middle table tbody tr:nth-child(even) {
