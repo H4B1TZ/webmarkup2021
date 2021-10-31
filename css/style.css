@@ -27,7 +27,7 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    background-color: #f1fffe;
+    background-color: #FFC72B;
 }
 
 body > footer {
@@ -169,7 +169,6 @@ body > footer {
 #home_middle_section {
     display: flex;
     justify-content: space-evenly;
-
 }
 
 #home_middle_section > h2 {
@@ -182,12 +181,13 @@ body > footer {
     margin-top: 50px;
 }
 
-#home_middle_section p {
+#home_middle_section > section p {
     line-height: 1.5rem;
     text-indent: 2em;
+    word-spacing: .2em;
 }
 
-#home_middle_section p::first-letter {
+#home_middle_section > section p::first-letter {
     font-weight: bold;
 }
 
@@ -228,10 +228,6 @@ body > footer {
     letter-spacing: .5em;
 
     color:#004b3b;
-}
-
-.upcoming_destinations p {
-    word-spacing: .2em;
 }
 
 @media only screen and (max-width: 480px) {
