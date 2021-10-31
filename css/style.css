@@ -162,6 +162,10 @@ body > footer {
 }
 
 /* Home page */
+#home_video {
+    position: relative;
+}
+
 #home_middle_section {
     display: flex;
     justify-content: space-evenly;
@@ -176,6 +180,10 @@ body > footer {
     text-indent: 2em;
 }
 
+#home_middle_section p::first-letter {
+    font-weight: bold;
+}
+
 #home_middle_section figure {
     float: right;
     width: 30%;
@@ -187,6 +195,7 @@ body > footer {
 
     border-color: black;
     border-style: double;
+    border-width: 5px;
 }
 
 #home_middle_section aside {
@@ -342,7 +351,7 @@ body > footer {
     background-color: #FF0;
 }
 
-#tickets_middle aside {
+#tickets_middle table + aside {
     width: 30%;
 
     display: flex;
@@ -373,6 +382,10 @@ body > footer {
 }
 
 @media only screen and (max-width: 480px) {
+    #tickets_middle {
+        flex-direction: column;
+    }
+
     #tickets_middle aside {
         width: 100%;
         flex-direction: column;
