@@ -258,6 +258,15 @@ body > footer {
     #home_middle_section img {
         width: 100%;
     }
+
+    #home_middle_section > section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #home_middle_section > section > h2 {
+        display: none;
+    }
 }
 
 /* Best destinations */
